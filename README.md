@@ -1,16 +1,15 @@
 EconomyNet
 ==========
 
-Projeto para controle financeiro pessoal, desenvolvido com o objetivo de estudar e aplicar conceitos de arquitetura limpa e boas práticas de desenvolvimento.
+Projeto para controle financeiro pessoal, desenvolvido com o objetivo de estudar e aplicar conceitos de arquitetura limpa e boas práticas de desenvolvimento em Windows Forms.
 
 ---
 
 Tecnologias Utilizadas
 -----------------------
 - .NET Core
-- ASP.NET Core
-- Entity Framework Core
-- Banco de Dados: SQL Server / SQLite
+- Windows Forms
+- Repository Pattern usando json com fonte de dados
 - Arquitetura Limpa (Clean Architecture)
 - Domain-Driven Design (DDD)
 
@@ -21,10 +20,10 @@ Estrutura do Projeto
 ```
 EconomyNet/
 ├── src/
-│   ├── Domain/           # Entidades, Agregados, Value Objects
-│   ├── Application/      # Casos de uso, DTOs, Interfaces
-│   ├── Infrastructure/   # Implementações técnicas, Repositórios, DbContext
-│   ├── API/              # Controllers, Middlewares, Configurações de API
+│   ├── Entity/           # Entidades, Agregados, Value Objects
+│   ├── Repository/       # Implementações técnicas, Repositórios, File Json
+│   ├── Rresource/        # Imagens
+│   ├── UI/               # Formulários
 ├── EconomyNet.sln        # Solução do Visual Studio
 └── README.md             # Este arquivo de descrição
 ```
@@ -42,16 +41,6 @@ Como Executar o Projeto
    cd EconomyNet
    dotnet restore
    ```
-3. Execute a API:
-   ```bash
-   cd src/API
-   dotnet run
-   ```
-4. A API estará disponível em:
-   ```
-   https://localhost:5001
-   ```
-
 ---
 
 Próximos Passos
