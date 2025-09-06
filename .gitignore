@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/EconomyNet/bin/Debug
+/.vs/EconomyNet/CopilotIndices/17.14.878.3237
+/.vs/EconomyNet/FileContentIndex
+/.vs/EconomyNet/v17
+/.vs
+/EconomyNet/obj/Debug
+/packages/Newtonsoft.Json.11.0.2
